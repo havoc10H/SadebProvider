@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@color/purple_200"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:text="@string/add_category" />
+
+
+
+
+
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/gray"
+        android:text="@string/category_name"/>
+
+    <EditText
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:id="@+id/ev_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:text=""
+        android:inputType="textEmailAddress"
+        android:background="@null" />
+
+    <View
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_200"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_No"
+            android:background="@color/purple_200"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:text="@string/cancel" />
+
+
+        <TextView
+            android:id="@+id/tv_Yes"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@color/purple_200"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

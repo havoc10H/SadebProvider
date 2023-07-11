@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment.NotificationFragment">
+
+        <RelativeLayout
+            android:id="@+id/RR_tool"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/search_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_52sdp"
+                android:inputType="text"
+                android:text="@string/notification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/llMain"
+            android:layout_below="@id/RR_tool"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/gray">
+
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Notification"
+            android:layout_below="@id/llMain"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_NoProductFound"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/purple_200"
+            android:text="@string/no_notification_found" />
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/loader"
+            android:id="@+id/loader_layout"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".act.activity.WaitingActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_Back"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/backnew"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:id="@+id/iv_Logo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/id_verification"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="@string/link_sent_to_email"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.chaos.view.PinView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:id="@+id/pvOtp"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/white"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                app:cursorColor="@color/black"
+                app:itemCount="4"
+                app:itemRadius="5dp"
+                android:elevation="10dp"
+                app:itemSpacing="16dp"
+                app:cursorWidth="1dp"
+                app:lineWidth="1dp"
+                app:lineColor="@color/gray"/>
+
+            <TextView
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:id="@+id/loginID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_Logo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/bg_blue_border"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="@string/go_to_login"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

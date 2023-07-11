@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "173987069808",
+    "project_id": "sadeb-b56b3",
+    "storage_bucket": "sadeb-b56b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173987069808:android:4e0d0a260d04a1525559b5",
+        "android_client_info": {
+          "package_name": "com.my.sadebprovider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173987069808-mktvn7uhb2p4rmeg4gub66vn0uk3q2ej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.sadebprovider",
+            "certificate_hash": "e05a49721ee1891dfd58d38b28999cc025730f0d"
+          }
+        },
+        {
+          "client_id": "173987069808-m9uu4ocnfma86n5b014j1vha3ia9j62o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1wVnWbzra2Mgl3Hj1V2_KRwtx7rOnv3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173987069808-m9uu4ocnfma86n5b014j1vha3ia9j62o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
